@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
         type:String,  
         required:true,
         minlength:6,
-    },
+    }, 
     profilePic:{
         type:String,
         default:"",   
@@ -29,8 +29,8 @@ const userSchema = new mongoose.Schema({
 );
 
 
-export default mongoose.model('User',userSchema);   
-
+const User = mongoose.model('User',userSchema);   
+export default User;
 
 
 //26 min

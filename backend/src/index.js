@@ -9,6 +9,7 @@ const port = process.env.PORT;
 import authRoute from './routes/auth.route.js';
 import { connectdb } from './lib/db.js';
 
+app.use(express.json());
 app.use('/api/auth',authRoute);
 
 app.listen(port, () =>  {
